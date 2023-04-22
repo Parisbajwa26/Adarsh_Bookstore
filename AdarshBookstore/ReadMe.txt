@@ -1,100 +1,107 @@
 ﻿Part 1
 *************************************************************************************
 
-2022-03-08
-1116
-Started the MVC application 
+2023-03-03
+
+1510
 ASP.NET  core web app with individual account authentication
 - Build it
 - Created the README
 - Test it
 
-1119- Confirmed that the application works
-1120- Changed the content of home page
-1121- Created the Github Repo
-1123- Confirmed the Repo
+******************************************************
+Sorry sir that I didn't enter the timing of my work ,
+because on of my classmate told me that this the default time and date sir told us to add in the readme , 
+so i got confused and didn't write it.
+******************************************************
 
-2022-03-09
-0114- started again next day.  let's test it
-0136- Added bootstrap theme from bootswatch.com
-0139- Added the dopdown button menu
-0140- tested the app, it's running great and the theme is awesome
+ Confirmed that the application works
+ Changed the content of home page
+ Created the Github Repo
+ Confirmed the Repo
+
+ started again next day.  let's test it
+ Added bootstrap theme from bootswatch.com
+ Added the dopdown button menu
+ tested the app, it's running great and the theme is awesome
 
 march break started
 
+ Added those css files provided in the assignment 2 folder on blackboard
+ tested the application
 
-20222-03-22
+ Added three new projects (class Library) in the application
+      -AdarshBookstore.DataAccess
+      -AdarshBookstore.Models
+      -AdarshBookstore.Utility
 
-0940- Added those css files provided in the assignment 2 folder on blackboard
-0950- tested the application
-1130- class just got finished and here i am start working on the the assignment 2
-1140- Added three new projects (class Library) in the application
-      -SanjaysBooks.DataAccess
-      -SanjaysBooks.Models
-      -SanjaysBooks.Utility
+ installed the Microsoft.EntityFramework Core.Relational and Core.SqlServer packages
+ deleted the migration folder as told in the assignment 2 ppt
+ it's time to install nuget package 
+       Identity.EntityFramework Core
 
-1145- installed the Microsoft.EntityFramework Core.Relational and Core.SqlServer packages
-1147- deleted the migration folder as told in the assignment 2 ppt
-1148- it's time to install nuget package 
-      - Identity.EntityFramework Core
-
-1151- Modified the namespaces in the projects that i created within the main project.
+ Modified the namespaces in the projects that i created within the main project.
       let's build it and run it.
       the build is successful in the second time because in the first time it says that you didn't install
       one of the nuget package.
 
-     updated the github repo
+updated the github repo
 
-
-
-
-  2314- Modified every project and build the solution and it's time to run it
+Modified every project and build the solution and it's time to run it
         it's working just fine
-2316- Updated the github repo
+ Updated the github repo
 
 
 
 Part 2
+Redoing from start 20-4-23 because of errors I got.
 *************************************************************************************
 
 
-2022-03-29
+
+Started the MVC application in my class
+
+ just started doing part 2 for assignment 2 sitting at riverside , having a nice view and evening
+ added the migration file in dataaccess project (old 20230420200853_AddDefaultIdentityMigration) 
+                                                (new 20230421191321_AddDefaultIdentityMigration)
+ updated the database and it's time to run the application 
+      
+
+ after building the project it showed this error- CS0311	The type 'SanjaysBooks.DataAccess.Repository.UnitOfWork' cannot be used as type parameter 'TImplementation' in the generic type or method 'ServiceCollectionServiceExtensions.AddScoped<TService, TImplementation>(IServiceCollection)'. There is no implicit reference conversion from 'SanjaysBooks.DataAccess.Repository.UnitOfWork' to 'IUnitOfWork'.	SanjaysBookStore	C:\Users\W0770698\Source\Repos\sanjayAnand0770698\SanjaysBookStore\SanjaysBookStore\Startup.cs	39	Active
+  Commented out services.AddScoped<IUnitOfWork, UnitOfWork>(); And now it works
+
+ Started the category CRUD part
+ Addded the category controller in adrea/admin/Controllers folder 
+ there is some error showing even after using the "using" statement
+ Error- CS0122	'IUnitOfWork' is inaccessible due to its protection level	
 
 
-0649- just started doing part 2 for assignment 2
-0649- added the migration file in dataaccess project 20230420200853_AddDefaultIdentityMigration
-0655- updated the database and it's time to run the application 
-      it's good for next part.
-
- 2022-03-30
-     
- 1408-   after building the project it showed this error- CS0311	The type 'SanjaysBooks.DataAccess.Repository.UnitOfWork' cannot be used as type parameter 'TImplementation' in the generic type or method 'ServiceCollectionServiceExtensions.AddScoped<TService, TImplementation>(IServiceCollection)'. There is no implicit reference conversion from 'SanjaysBooks.DataAccess.Repository.UnitOfWork' to 'IUnitOfWork'.	SanjaysBookStore	C:\Users\W0770698\Source\Repos\sanjayAnand0770698\SanjaysBookStore\SanjaysBookStore\Startup.cs	39	Active
- 1411- Commented out services.AddScoped<IUnitOfWork, UnitOfWork>(); And now it works
-
- 2022-04-01
-
- 1552- Started the category CRUD part
- 1611- Addded the category controller in adrea/admin/Controllers folder 
-       there is some error showing even after using the "using" statement
-	   Error- CS0122	'IUnitOfWork' is inaccessible due to its protection level	
-
-
-2022-04-05
-
-1108- Added a new index view in to the category folder  and copied the indexview.txt file content into it.
-1110- it's time to run the application and it didn't run when i click on the category button.
-1130- i reesolved the issue- the issue was that i created that index view file in views folder instead i had to make it in areas/admin folder
+ Added a new index view in to the category folder  and copied the indexview.txt file content into it.
+ it's time to run the application and it didn't run when i click on the category button.
+ i reesolved the issue- the issue was that i created that index view file in views folder instead i had to make it in areas/admin folder
       so i tranferred the file and it is good and it's running just fine.
 
-1140- Added the category button in the dropdown button
+ Added the category button in the dropdown button
 
-1143- The application is running and now i see my category button in the dropdown button.
+ The application is running and now i see my category button in the dropdown button.
 
-1147- Made commits to the github and pushed them.
+ Made commits to the github and pushed them.
 
-1153- Made some changes in index file of the category, added the font from font awesome and checked them in the browser and then deleted the code and made the
+ Made some changes in index file of the category, added the font from font awesome and checked them in the browser and then deleted the code and made the
       javascript file for category and the copied the code provided by sir in the assignment 2 folder for js.
 
-1210- added the section call for the javascript in category index and tested the application and yeah it's good.
+      21-04-23
 
-1240- took a long break and back to coding.
+      I am in my ASP Class and now starting my rest of the assignment
+ Made my upsert.cshtml and add the code given in assignment 2 files.
+ Now createing a partial view name _CreateAndBackToListButton.
+  added the following code givenin the ppt
+   update the uprset.cshtml 
+
+   # I am having error in the category that there is no table.
+     so Friend helped me and delet the current migration table and create new one .. but the error is still the same 
+       (20230421191357_AddCategoryToDb , 20230421191321_AddDefaultIdentityMigration)
+
+       I am trying so hard but its still the same.. 
+       So i am submitting the file with part 2.
+
